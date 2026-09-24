@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container"> <!-- Header -->
+        <header class="header">
+            <div class="header-content"> <span class="badge">👥 USERS</span>
+                <h1>User Directory</h1>
+                <p> Search and explore users by their name or email address. </p>
+            </div> <!-- Search -->
+            <div class="search-box"> <span class="search-icon">🔍</span> <input id="SearchInput" type="text"
+                    placeholder="Search by name or email..." autocomplete="off"> <span id="userCount"
+                    class="user-count"></span> </div>
+        </header> <!-- Users -->
+        <section class="user-section">
+            <div class="section-title">
+                <h2>All Users</h2> <span id="resultText">3 users</span>
+            </div>
+            <div class="usercontainer"></div> <!-- No Result -->
+            <div id="noResult" class="no-result">
+                <div class="no-result-icon">🔍</div>
+                <h3>No users found</h3>
+                <p>Try searching with another name or email.</p>
+            </div>
+        </section>
+    </main> <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+<script src="./index.js"></script>
+</body>
+
+</html>
